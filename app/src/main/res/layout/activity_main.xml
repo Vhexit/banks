@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btnpostbank"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="96dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="95dp"
+        android:text="postbank"
+        app:layout_constraintBottom_toBottomOf="@+id/btnequity"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btnkcb" />
+
+    <Button
+        android:id="@+id/btndtb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="44dp"
+        android:text="dtb"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnkcb" />
+
+    <Button
+        android:id="@+id/btnkcb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="41dp"
+        android:layout_marginTop="83dp"
+        android:text="KCB"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnequity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="51dp"
+        android:text="equity"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btndtb" />
+
+    <Button
+        android:id="@+id/btnfamily"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginBottom="46dp"
+        android:text="family"
+        app:layout_constraintBottom_toTopOf="@+id/btnpostbank"
+        app:layout_constraintStart_toStartOf="@+id/btnpostbank" />
+
+    <Button
+        android:id="@+id/btnabsa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="55dp"
+        android:layout_marginEnd="3dp"
+        android:text="absa"
+        app:layout_constraintEnd_toEndOf="@+id/btnfamily"
+        app:layout_constraintStart_toStartOf="@+id/btnpostbank"
+        app:layout_constraintTop_toBottomOf="@+id/btnpostbank" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
